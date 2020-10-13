@@ -2,6 +2,10 @@
 
 ## master (unreleased)
 
+### New features
+
+* [#8889](https://github.com/rubocop-hq/rubocop/pull/8889): Cops can use new `on_after_<type>` callbacks (only for nodes that may have children nodes, like `:send` and unlike `:sym`). ([@marcandre][])
+
 ### Changes
 
 * [#8882](https://github.com/rubocop-hq/rubocop/pull/8882): **(Potentially breaking)** RuboCop assumes that Cop classes do not define new `on_<type>` methods at runtime (e.g. via `extend`). ([@marcandre][])
